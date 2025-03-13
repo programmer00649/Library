@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>مكتبة أهل الحديث</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="library-container">
+    <header>
+      <h1 class="thuluth-font">مكتبة أهل الحديث</h1>
+      <p>استعرض وحمّل الكتب المتاحة</p>
+    </header>
+    
+    <div class="books-container">
+      <h2>الكتب المتاحة</h2>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="البحث بواسطة اسم الكتاب أو المؤلف...">
+        <p class="search-tip">يمكنك البحث عن الكتب بواسطة عنوان الكتاب أو اسم المؤلف</p>
+      </div>
+      <div id="books-grid" class="books-grid">
+        <!-- Books will be added here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم معلومات المطور -->
+  <footer class="developer-info">
+    <div class="developer-container">
+      <h2>عن المكتبة</h2>
+      <p>تم تطوير هذه المكتبة بواسطة: <strong>محسن مبارك الكرفلة</strong></p>
+      <p class="contribution-call">لديك كتاب من كتب علماء ومشائخ الدعوة السلفية في اليمن؟ 
+        أرسله إلينا لإضافته إلى المكتبة وإثراء المحتوى العلمي!</p>
+      
+      <div class="contact-section">
+        <a href="https://wa.me/967775960910" class="whatsapp-btn" target="_blank">
+          <i class="whatsapp-icon"></i>
+          <span>تواصل معنا عبر واتساب</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for book details -->
+  <div id="book-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="modal-book-details">
+        <!-- Book details will be added here by JavaScript -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
